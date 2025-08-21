@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffff;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    /* height: 100vh; */
+    max-height: 100%;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: #ffff;
+}
+
+.card1 {
+
+    height: 500px;
+    width: 300px;
+    background-color: #e28525;
+    text-align: inherit;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.circle {
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    background-color: #b36c1e;
+}
+.circle img{
+    margin:5px 0 0 25px;
+    width: 35px;
+}
+.circle1 {
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    background-color: #00555a;
+}
+.circle1 img{
+    margin: 5px 0 0 25px;
+    width: 35px;
+}
+
+.circle2 {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: #003231;
+}
+
+.card2 {
+
+    height: 500px;
+    width: 300px;
+    background-color: #016972;
+    text-align: center;
+    text-align: inherit;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.card3 {
+
+    height: 500px;
+    width: 300px;
+    background-color: #00403f;
+    text-align: center;
+    text-align: inherit;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer; 
+    border: 1px solid #fff;
+    transition: all .3s ease-in-out;
+}
+
+
+.card1 .btn{
+    color: #b36c1e;
+}
+
+.card2 .btn{
+    color: #016972;
+}
+.card3 .btn{
+    color: #00403f;
+}
+.btn:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+    body{
+        height: 100%;
+    }
+}
